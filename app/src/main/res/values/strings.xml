@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Answer</string>
+
+    <string name="action_sign_out">Sign out</string>
+    <string name="action_search">Search</string>
+    <string name="action_about">About</string>
+    <string name="action_release">Publish</string>
+
+    <string name="action_edit">Edit</string>
+    <string name="action_praise">Like</string>
+
+
+    <string name="input_you_problem">Write down your questions</string>
+    <string name="add_problem_explain">Supplementary description</string>
+    <string name="add_problem_topic">Add the corresponding topic</string>
+
+
+    <string name="home">Home</string>
+    <string name="quiz">Quiz</string>
+    <string name="enshrine">Collection</string>
+    <string name="manuscript">Manuscript</string>
+    <string name="more">More</string>
+
+    <string name="title_activity_quiz">Adding problems</string>
+
+
+    <string name="from">From</string>
+
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+
+
+    <string name="login">Sign in</string>
+    <string name="reg">Sign up</string>
+    <string name="sure">Determine</string>
+    <string name="cancel">Cancel</string>
+    <string name="wait">Wait a minute</string>
+    <string name="remove">Remove\t\t</string>
+    <string name="remove_success">Remove success</string>
+    <string name="reply_success">Answer success</string>
+    <string name="edit_success">Change success</string>
+    <string name="praise_success">Point like success</string>
+    <string name="enshrine_success">Collection success</string>
+    <string name="this_enshrine">\t\tThis collection？</string>
+    <string name="welcome_problem">\tWelcome to Problem</string>
+    <string name="u_name">Name</string>
+    <string name="personal_introduction">Personal introduction</string>
+    <string name="u_sex">Sex</string>
+    <string name="u_passwd">Password</string>
+    <string name="u_email">E-mail</string>
+    <string name="replied">Replied</string>
+    <string name="quized">Quized</string>
+    <string name="praised_">Like</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="sure_to_logout_and_exit_the_program">Sure to logout and exit the program?</string>
+    <string name="and_then_press_an_exit_procedure">And then press an exit procedure</string>
+
+    <string name="input_search_problem">Enter the problem to search</string>
+    <string name="reply_not_null">The answer can not be empty</string>
+    <string name="networkunusable">Network is not available</string>
+    <string name="praised">You may have already passed.</string>
+    <string name="enshrined">You may have already collected.</string>
+    <string name="problem_not_null">The problem can not be empty</string>
+    <string name="topic_not_null">The topic can not be empty</string>
+    <string name="release_success">Publishing Success</string>
+    <string name="release_not_success">A similar problem exists in the publication of a failure.</string>
+    <string name="name_email_passwd_not_null">Name, mailbox, password can not be empty</string>
+    <string name="enter_email">Please enter the correct mailbox</string>
+    <string name="email_passwd_not_null">Email or password is empty</string>
+    <string name="sure_update_reply">Be sure to update this answer？</string>
+    <string name="sure_update_problem">To update this problem？</string>
+    <string name="sure_delete_manuscript">Delete this draft？</string>
+    <string name="sure_save_manuscript">Save to a draft？</string>
+
+    <string name="connection_timeout">Connect server timeout...</string>
+
+
+    <string name="title_activity_main">Home</string>
+    <string name="title_activity_enshrine">Collection</string>
+    <string name="title_activity_manuscript">ManuScript</string>
+    <string name="title_activity_search">Search</string>
+    <string name="title_activity_user_info">My information</string>
+    <string name="title_activity_problem">Problem</string>
+    <string name="title_activity_add_reply">Add answer</string>
+    <string name="title_activity_update_reply">Update answer</string>
+    <string name="title_activity_update_problem">Update problem</string>
+    <string name="title_activity_edit_user_info">Edit My information</string>
+</resources>
