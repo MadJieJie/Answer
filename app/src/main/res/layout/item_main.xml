@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/white"
+    android:clickable="false"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <com.fengjie.percentlibrary.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="false">
+
+        <TextView
+            android:id="@+id/tv_noticeTitle_main"
+            style="@style/w_w_h_w"
+            android:text="节点的电流如何分析?"
+            android:textSize="25sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_questionContent_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tv_studentName_main"
+            android:layout_below="@+id/tv_noticeTitle_main"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="微信设计的神细节有哪些？微信设计的神细节有哪些？"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_from_main"
+            style="@style/w_w_h_w"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/from"
+            android:textSize="13sp"/>
+        <TextView
+            android:id="@+id/tv_studentName_main"
+            style="@style/w_w_h_w"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/tv_from_main"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="设计"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_createTime_main"
+            style="@style/w_w_h_w"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="2017-04-09 12:00"
+            android:textColor="@color/blue"
+            android:textSize="16sp"/>
+
+    </com.fengjie.percentlibrary.PercentRelativeLayout>
+
+    <!--layout_widthPercent、layout_heightPercent、-->
+    <!--layout_marginPercent、layout_marginLeftPercent、-->
+    <!--layout_marginTopPercent、layout_marginRightPercent、-->
+    <!--layout_marginBottomPercent、layout_marginStartPercent、layout_marginEndPercent。-->
+
+
+</android.support.v7.widget.CardView>

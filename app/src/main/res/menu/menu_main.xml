@@ -10,10 +10,22 @@
         android:title="注销"
         app:showAsAction="never" />
 
-
     <item
-        android:id="@+id/action_search"
+        android:id="@+id/action_quit"
         android:orderInCategory="100"
         android:title="退出"
-        app:showAsAction="ifRoom" />
+        app:showAsAction="never" />
+
+    <!--<item-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title=""-->
+        <!--app:showAsAction="never" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/action_search"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:icon="@mipmap/ic_search"-->
+        <!--android:title="@string/action_search"-->
+        <!--app:showAsAction="ifRoom" />-->
+
 </menu>

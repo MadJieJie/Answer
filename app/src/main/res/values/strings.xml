@@ -42,7 +42,7 @@
     <string name="praise_success">Point like success</string>
     <string name="enshrine_success">Collection success</string>
     <string name="this_enshrine">\t\tThis collection？</string>
-    <string name="welcome_problem">\tWelcome to Problem</string>
+    <string name="welcome_problem">\tWelcome!</string>
     <string name="u_name">Name</string>
     <string name="personal_introduction">Personal introduction</string>
     <string name="u_sex">Sex</string>
@@ -86,4 +86,6 @@
     <string name="title_activity_update_reply">Update answer</string>
     <string name="title_activity_update_problem">Update problem</string>
     <string name="title_activity_edit_user_info">Edit My information</string>
+
+
 </resources>

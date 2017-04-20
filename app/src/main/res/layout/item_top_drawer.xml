@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/blue"
+    android:paddingLeft="20dp"
+    android:paddingTop="10dp">
+
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/round"
+        android:layout_marginLeft="15dp"
+        android:padding="2dp"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="Name"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_toEndOf="@+id/iv_avatar"
+        android:layout_marginStart="23dp"/>
+
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="简单地介绍一下自己"-->
+    <!--android:id="@+id/tv_intro"-->
+    <!--android:textSize="12sp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:textColor="#5EEE"-->
+    <!--android:layout_below="@+id/tv_name"-->
+    <!--android:layout_alignLeft="@+id/tv_name"-->
+    <!--android:layout_alignStart="@+id/tv_name" />-->
+
+</RelativeLayout>

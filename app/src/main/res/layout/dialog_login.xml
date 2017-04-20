@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="20dp"
+              android:paddingRight="20dp"
+              android:paddingTop="20dp">
+
+    <EditText
+        android:id="@+id/et_u_email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/u_email"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"/>
+    <EditText
+        android:id="@+id/et_u_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="@string/u_passwd"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:password="true"/>
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/w_w_h_w"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="学生"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_student_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:checked="true"
+            android:padding="5dp"/>
+
+        <TextView
+            style="@style/w_w_h_w"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="教师"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_teacher_welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|right"
+            android:gravity="center"
+            android:padding="5dp"/>
+
+    </RadioGroup>
+
+</LinearLayout>

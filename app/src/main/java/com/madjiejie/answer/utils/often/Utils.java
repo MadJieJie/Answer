@@ -65,6 +65,18 @@ public class Utils
 	}*/
 	
 	/**
+	 * 判断是否email
+	 * @param email
+	 * @return
+	 */
+	public static boolean isEmail ( String email )
+	{
+		String check = "^([a-z0-9A-Z]+[-|\\.]?)+[a-z0-9A-Z]@([a-z0-9A-Z]+(-[a-z0-9A-Z]+)?\\.)+[a-zA-Z]{2,}$";
+		Pattern regex = Pattern.compile(check);
+		Matcher matcher = regex.matcher(email);
+		return matcher.matches();
+	}
+	/**
 	 * 判断字符串是否数字和字符结合，并且8-16位
 	 * @param str
 	 * @return
