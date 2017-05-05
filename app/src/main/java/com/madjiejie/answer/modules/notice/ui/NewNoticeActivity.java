@@ -91,7 +91,7 @@ public class NewNoticeActivity extends RxAppCompatActivity
 					{
 						if ( result.result.equals("success") )
 						{
-							ToastUtils.showShort("发布提问成功");
+							ToastUtils.showShort("发布公告成功");
 							finish();
 						} else
 						{

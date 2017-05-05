@@ -140,6 +140,7 @@ public class NoticeManuscriptActivity extends RxAppCompatActivity
 		mXRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 		
 		mXRecyclerView.setLoadingMoreEnabled(false);
+		mXRecyclerView.setPullRefreshEnabled(false);
 		mXRecyclerView.setAdapter(mAdapter);
 		
 	}

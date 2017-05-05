@@ -90,7 +90,7 @@ public class NoticeActivity extends RxAppCompatActivity
 						.setText(R.id.tv_teacherName_main, info.teacherName)
 						.setText(R.id.tv_noticeTitle_main, info.noticeTitle)
 						.setText(R.id.tv_noticeContent_main, info.noticeContent)
-						.setText(R.id.tv_createTime_main, info.createTime);
+						.setText(R.id.tv_createTime_main, info.createTime.substring(0,info.createTime.length()-5));
 			}
 		};
 		
@@ -114,6 +114,7 @@ public class NoticeActivity extends RxAppCompatActivity
 		mXRecyclerView = ( XRecyclerView ) findViewById(R.id.recyclerView);
 		mXRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true));  //false:end fron
 		mXRecyclerView.setLoadingMoreEnabled(false);
+		mXRecyclerView.setPullRefreshEnabled(false);
 //		mXRecyclerView.setLoadingListener(new XRecyclerView.LoadingListener()       //上下拉监听+
 //		{
 //			@Override

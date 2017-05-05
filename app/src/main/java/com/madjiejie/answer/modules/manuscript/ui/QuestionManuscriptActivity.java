@@ -140,6 +140,8 @@ public class QuestionManuscriptActivity extends RxAppCompatActivity
 		mXRecyclerView.setLayoutManager(new LinearLayoutManager(this));
 		
 		mXRecyclerView.setLoadingMoreEnabled(false);
+		mXRecyclerView.setPullRefreshEnabled(false);
+		
 		mXRecyclerView.setAdapter(mAdapter);
 		
 	}

@@ -30,24 +30,22 @@
             android:textColor="@color/red"
             android:textSize="18sp"/>
 
-        <TextView
-            android:id="@+id/tv_from_main"
-            style="@style/w_w_h_w"
-            android:layout_toRightOf="@+id/tv_notice_main"
-            android:gravity="center_vertical"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="@string/from"
-            android:textColor="@color/gray"
-            android:textSize="13sp"/>
+        <!--<TextView-->
+            <!--android:id="@+id/tv_from_main"-->
+            <!--style="@style/w_w_h_w"-->
+            <!--android:layout_toRightOf="@+id/tv_notice_main"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:paddingBottom="5dp"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:paddingTop="5dp"-->
+            <!--android:text="@string/from"-->
+            <!--android:textColor="@color/gray"-->
+            <!--android:textSize="13sp"/>-->
 
         <TextView
             android:id="@+id/tv_teacherName_main"
             style="@style/w_w_h_w"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/tv_from_main"
             android:gravity="center_vertical"
             android:paddingBottom="5dp"
             android:paddingLeft="10dp"
@@ -55,7 +53,8 @@
             android:paddingTop="5dp"
             android:text="teacher"
             android:textColor="@color/blue"
-            android:textSize="16sp"/>
+            android:textSize="16sp" android:layout_alignBaseline="@+id/tv_from_main"
+            android:layout_alignBottom="@+id/tv_from_main" android:layout_toEndOf="@+id/tv_notice_main"/>
 
         <TextView
             android:id="@+id/tv_noticeTitle_main"
@@ -65,19 +64,7 @@
             android:textColor="@color/black"
             android:textSize="25sp"/>
 
-        <TextView
-            android:id="@+id/tv_createTime_main"
-            style="@style/w_w_h_w"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:gravity="center_vertical"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:paddingTop="5dp"
-            android:text="2017-04-09 12:00"
-            android:textColor="@color/gray"
-            android:textSize="16sp"/>
+
 
         <TextView
             android:id="@+id/tv_noticeContent_main"
@@ -91,6 +78,20 @@
             android:textColor="@android:color/black"
             android:textSize="17sp"/>
 
+
+        <TextView
+            android:id="@+id/tv_createTime_main"
+            style="@style/w_w_h_w"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_noticeContent_main"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="2017-04-09 12:00"
+            android:textColor="@color/gray"
+            android:textSize="13sp"/>
 
     </com.fengjie.percentlibrary.PercentRelativeLayout>
 

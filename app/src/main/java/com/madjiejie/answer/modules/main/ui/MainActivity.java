@@ -51,9 +51,11 @@ public class MainActivity extends RxAppCompatActivity
 	private HeaderAndFooterWrapper mHeaderAndFooterWrapper;
 	private TextView mTVName;
 	private TextView mTVTitle;
-	private TextView mTVNotice ;
-	private TextView mTVCreateTime ;
+	private TextView mTVNotice;
+	private TextView mTVCreateTime;
 	private BaseAdapter mBaseAdapter;
+	
+	
 	@Override
 	protected void onCreate ( Bundle savedInstanceState )
 	{
@@ -63,6 +65,7 @@ public class MainActivity extends RxAppCompatActivity
 		initDrawer();
 		initToolbar();
 		initRecyclerView();
+		
 	}
 	
 	
@@ -123,7 +126,7 @@ public class MainActivity extends RxAppCompatActivity
 						.setText(R.id.tv_noticeTitle_main, info.questionTitle)
 						.setText(R.id.tv_questionContent_main, info.questionContent)
 						.setText(R.id.tv_studentName_main, info.studentName)
-						.setText(R.id.tv_createTime_main, info.createTime);
+						.setText(R.id.tv_createTime_main, info.createTime.substring(0,info.createTime.length()-5));
 			}
 		};
 		
@@ -140,11 +143,11 @@ public class MainActivity extends RxAppCompatActivity
 				{
 					LogUtils.d("DEBUG", "onItemClick: " + position);
 					Intent intent = new Intent(MainActivity.this, QuestionActivity.class);
-					intent.putExtra(MainConstant.QUESTION_ID, mData.get(position-2).id);
-					intent.putExtra(MainConstant.STUDENT_NAME, mData.get(position-2).studentName);
-					intent.putExtra(MainConstant.QUESTION_TITLE, mData.get(position-2).questionTitle);
-					intent.putExtra(MainConstant.QUESTION_CONTENT, mData.get(position-2).questionContent);
-					intent.putExtra(MainConstant.CREATE_TIME, mData.get(position-2).createTime);
+					intent.putExtra(MainConstant.QUESTION_ID, mData.get(position - 2).id);
+					intent.putExtra(MainConstant.STUDENT_NAME, mData.get(position - 2).studentName);
+					intent.putExtra(MainConstant.QUESTION_TITLE, mData.get(position - 2).questionTitle);
+					intent.putExtra(MainConstant.QUESTION_CONTENT, mData.get(position - 2).questionContent);
+					intent.putExtra(MainConstant.CREATE_TIME, mData.get(position - 2).createTime.substring(0,mData.get(position - 2).createTime.length()-5));
 					startActivity(intent);
 				}
 			}
@@ -159,10 +162,10 @@ public class MainActivity extends RxAppCompatActivity
 		mHeaderAndFooterWrapper = new HeaderAndFooterWrapper(mAdapter);
 		
 		View topNotice = LayoutInflater.from(this).inflate(R.layout.item_notice, null);
-		 mTVName = ( TextView ) topNotice.findViewById(R.id.tv_teacherName_main);
-		 mTVTitle = ( TextView ) topNotice.findViewById(R.id.tv_noticeTitle_main);
+		mTVName = ( TextView ) topNotice.findViewById(R.id.tv_teacherName_main);
+		mTVTitle = ( TextView ) topNotice.findViewById(R.id.tv_noticeTitle_main);
 		mTVNotice = ( TextView ) topNotice.findViewById(R.id.tv_noticeContent_main);
-		 mTVCreateTime = ( TextView ) topNotice.findViewById(R.id.tv_createTime_main);
+		mTVCreateTime = ( TextView ) topNotice.findViewById(R.id.tv_createTime_main);
 		
 		topNotice.setOnClickListener(v ->
 		{            //点击事件
@@ -171,7 +174,7 @@ public class MainActivity extends RxAppCompatActivity
 		
 		mHeaderAndFooterWrapper.addHeaderView(topNotice);
 		mXRecyclerView = ( XRecyclerView ) findViewById(R.id.recyclerView);
-		mXRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+		mXRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 		
 		mXRecyclerView.setLoadingListener(new XRecyclerView.LoadingListener()       //上下拉监听
 		{
@@ -230,7 +233,7 @@ public class MainActivity extends RxAppCompatActivity
 					mTVName.setText(notice.teacherName);
 					mTVTitle.setText(notice.noticeTitle);
 					mTVNotice.setText(notice.noticeContent);
-					mTVCreateTime.setText(notice.createTime);
+					mTVCreateTime.setText(notice.createTime.substring(0,notice.createTime.length()-5));
 				});
 	}
 	
@@ -252,7 +255,8 @@ public class MainActivity extends RxAppCompatActivity
 			case R.id.action_quit:
 				finish();
 				break;
-			default:break;
+			default:
+				break;
 		}
 		
 		return super.onOptionsItemSelected(item);

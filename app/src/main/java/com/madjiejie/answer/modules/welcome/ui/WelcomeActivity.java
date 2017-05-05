@@ -182,7 +182,7 @@ public class WelcomeActivity extends RxAppCompatActivity implements View.OnClick
 		RetrofitSingleton.getInstance()
 				.getRegisterResult(userType, account, password, userName)
 				.compose(this.bindToLifecycle())
-				.subscribe(new AbstractSimpleClass.Next< Result >()
+				.subscribe(new AbstractSimpleClass.NextAndonComplete< Result >()
 				{
 					@Override
 					public void onNext ( Result result )
@@ -190,6 +190,11 @@ public class WelcomeActivity extends RxAppCompatActivity implements View.OnClick
 						ToastUtils.showShort(result.result);
 					}
 					
+					@Override
+					public void onComplete ()
+					{
+						
+					}
 				});
 	}
 	
